@@ -40,7 +40,7 @@ bool tttb_winner_draw_test() {
     b.set(2, 1, TictactoeXO::X);
     b.set(2, 2, TictactoeXO::O);
     
-    // Make sure there was no incorrectly judged winner
+    // Make sure the game was correctly evaluated as drawn
     return b.winner() == TictactoeXO::none;
 
 }
